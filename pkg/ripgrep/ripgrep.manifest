@@ -1,0 +1,5 @@
+author :: mostypc123 :: mostypc123@redroselinux.org
+package :: ripgrep :: 15.2.0
+download :: git :: hub:BurntSushi/ripgrep :: 15.2.0
+build :: cargo_single_bin :: rg
+install_cmd :: auto

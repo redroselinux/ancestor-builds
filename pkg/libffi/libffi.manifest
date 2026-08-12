@@ -1,0 +1,6 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: libffi :: 3.8.0
+build_deps :: gcc make autoconf automake libtool
+download :: git :: hub:libffi/libffi :: v3.8.0
+build :: autotools_make :: --disable-static
+install_cmd :: auto

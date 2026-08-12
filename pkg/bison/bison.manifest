@@ -1,0 +1,6 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: bison :: 3.8.2
+build_deps :: gcc make m4
+download :: gnu_ftp :: .tar.xz
+build :: autotools_make
+install_cmd :: auto

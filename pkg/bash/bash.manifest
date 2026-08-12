@@ -1,0 +1,6 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: bash :: 5.3
+build_deps :: gcc make readline ncurses
+download :: gnu_ftp :: .tar.gz
+build :: autotools_make :: --with-installed-readline --without-bash-malloc
+install_cmd :: auto

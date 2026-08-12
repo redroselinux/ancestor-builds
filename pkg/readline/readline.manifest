@@ -1,0 +1,6 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: readline :: 8.3
+build_deps :: gcc make ncurses
+download :: gnu_ftp :: .tar.gz
+build :: autotools_make
+install_cmd :: auto

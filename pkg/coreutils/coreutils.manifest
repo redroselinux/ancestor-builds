@@ -1,0 +1,6 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: coreutils :: 9.11
+build_deps :: gcc make
+download :: gnu_ftp :: .tar.xz
+build :: autotools_make
+install_cmd :: auto

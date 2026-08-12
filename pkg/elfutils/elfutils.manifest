@@ -1,0 +1,7 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: elfutils :: 0.195
+build_deps :: gcc make zlib
+download :: manual :: https://sourceware.org/elfutils/ftp/0.195/elfutils-0.195.tar.bz2
+manual_extract :: tar -xf <placeholder> --strip-components=1 -C <dir>
+build :: autotools_make :: --disable-debuginfod --disable-libdebuginfod
+install_cmd :: auto

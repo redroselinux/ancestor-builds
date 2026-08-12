@@ -1,0 +1,6 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: make :: 4.4.1
+build_deps :: gcc make
+download :: gnu_ftp :: .tar.gz
+build :: autotools_make
+install_cmd :: auto

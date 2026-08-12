@@ -1,0 +1,7 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: example :: 1.0
+build_deps :: gcc
+download :: git :: hub:redroselinux/example :: main
+build :: manual :: gcc main.c -o example
+install_cmd :: manual :: mkdir -p <placeholder>/usr/bin
+install_cmd :: manual :: cp example <placeholder>/usr/bin

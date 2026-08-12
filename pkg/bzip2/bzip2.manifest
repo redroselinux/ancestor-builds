@@ -3,5 +3,6 @@ package :: bzip2 :: 1.0.8
 build_deps :: gcc make
 download :: manual :: https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 manual_extract :: tar -xf <placeholder> --strip-components=1 -C <dir>
+build :: manual :: sed -i '/^ln -s -f/ s|\$(PREFIX)/bin/||g' Makefile
 build :: manual :: make -j$(nproc)
 install_cmd :: manual :: make install PREFIX=<placeholder>/usr

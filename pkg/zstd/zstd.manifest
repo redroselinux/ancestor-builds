@@ -1,6 +1,7 @@
 author :: Edward :: EdwardGroves20007@proton.me
 package :: zstd :: 1.5.7
-build_deps :: gcc make
+build_deps :: gcc make ronn
 download :: git :: hub:facebook/zstd :: v1.5.7
 build :: manual :: make -j$(nproc)
+build :: manual :: make -C programs man
 install_cmd :: manual :: make install PREFIX=/usr DESTDIR=<placeholder>

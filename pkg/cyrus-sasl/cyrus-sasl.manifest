@@ -1,0 +1,6 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: cyrus-sasl :: 2.1.28
+build_deps :: gcc make autoconf automake libtool
+download :: git :: hub:cyrusimap/cyrus-sasl :: cyrus-sasl-2.1.28
+build :: autotools_make :: --disable-static
+install_cmd :: auto

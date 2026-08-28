@@ -1,0 +1,6 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: diffutils :: 3.12
+build_deps :: gcc make
+download :: gnu_ftp :: .tar.xz
+build :: autotools_make
+install_cmd :: auto

@@ -1,0 +1,6 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: ed :: 1.22.5
+build_deps :: gcc make lzip
+download :: gnu_ftp :: .tar.lz
+build :: autotools_make
+install_cmd :: auto

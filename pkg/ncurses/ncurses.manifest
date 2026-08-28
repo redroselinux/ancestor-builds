@@ -1,0 +1,7 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: ncurses :: 6.6
+build_deps :: gcc make
+download :: gnu_ftp :: .tar.gz
+build :: autotools_make :: --with-shared --disable-static
+install_cmd :: auto
+car_post_inst :: ldconfig

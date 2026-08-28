@@ -1,0 +1,7 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: zlib :: 1.3.2
+build_deps :: gcc make
+download :: git :: hub:madler/zlib :: v1.3.2
+build :: manual :: ./configure --prefix=/usr
+build :: manual :: make -j$(nproc)
+install_cmd :: manual :: make install DESTDIR=<placeholder>

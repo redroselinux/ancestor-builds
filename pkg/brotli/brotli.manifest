@@ -1,0 +1,7 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: brotli :: 1.2.0
+build_deps :: cmake gcc make
+download :: git :: hub:google/brotli :: v1.2.0
+build :: manual :: cmake -B build -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release
+build :: manual :: cmake --build build -j$(nproc)
+install_cmd :: manual :: DESTDIR=<placeholder> cmake --install build

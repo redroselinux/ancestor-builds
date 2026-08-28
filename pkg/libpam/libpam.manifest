@@ -1,0 +1,8 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: libpam :: 1.7.2
+build_deps :: meson ninja gcc make flex bison pkg-config libxcrypt
+download :: manual :: https://github.com/linux-pam/linux-pam/releases/download/v1.7.2/Linux-PAM-1.7.2.tar.xz
+manual_extract :: tar -xf <placeholder> --strip-components=1 -C <dir>
+build :: manual :: meson setup build --prefix=/usr
+build :: manual :: ninja -C build
+install_cmd :: manual :: DESTDIR=<placeholder> ninja -C build install

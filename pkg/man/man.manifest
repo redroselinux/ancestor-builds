@@ -1,0 +1,7 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: man :: 2.13.1
+build_deps :: gcc make libpipeline pkg-config
+download :: manual :: https://download.savannah.gnu.org/releases/man-db/man-db-2.13.1.tar.xz
+manual_extract :: tar -xf <placeholder> --strip-components=1 -C <dir>
+build :: autotools_make :: --disable-setuid
+install_cmd :: auto

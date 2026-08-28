@@ -1,0 +1,10 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: dbus :: 1.16.2
+build_deps :: meson ninja gcc expat
+download :: manual :: https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz
+manual_extract :: tar -xf <placeholder> --strip-components=1 -C <dir>
+build :: manual :: meson setup build --prefix=/usr --libexecdir=/usr/libexec --sysconfdir=/etc --localstatedir=/var -Dman=disabled -Dxml_docs=disabled
+build :: manual :: ninja -C build
+install_cmd :: manual :: DESTDIR=<placeholder> ninja -C build install
+car_post_inst :: chown root:messagebus /usr/libexec/dbus-daemon-launch-helper
+car_post_inst :: chmod 4750 /usr/libexec/dbus-daemon-launch-helper

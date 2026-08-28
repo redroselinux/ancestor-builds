@@ -1,0 +1,7 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: attr :: 2.6.0
+build_deps :: gcc make
+download :: manual :: https://download.savannah.gnu.org/releases/attr/attr-2.6.0.tar.xz
+manual_extract :: tar -xf <placeholder> --strip-components=1 -C <dir>
+build :: autotools_make :: --disable-static
+install_cmd :: auto

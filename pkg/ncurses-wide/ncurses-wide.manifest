@@ -1,0 +1,8 @@
+author :: Edward :: EdwardGroves20007@proton.me
+package :: ncurses-wide :: 6.6
+build_deps :: gcc make
+download :: manual :: https://ftp.gnu.org/gnu/ncurses/ncurses-6.6.tar.gz
+manual_extract :: tar -xf <placeholder> --strip-components=1 -C <dir>
+build :: autotools_make :: --with-shared --disable-static --enable-widec
+install_cmd :: auto
+car_post_inst :: ldconfig

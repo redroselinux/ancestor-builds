@@ -1,0 +1,7 @@
+author :: anonymous :: drop-all@redroselinux.org
+package :: file :: 5.48
+download :: manual :: https://astron.com/pub/file/file-5.48.tar.gz
+manual_extract :: tar xzf <placeholder> -C <dir> --strip-components=1
+build :: manual :: autoreconf -i
+build :: autotools_make ::
+install_cmd :: auto

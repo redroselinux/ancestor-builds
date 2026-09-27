@@ -1,4 +1,4 @@
-author :: anonymous :: drop-all@redroselinux.org
+author :: mostypc123 :: mostypc123@redroselinux.org
 package :: file :: 5.48
 download :: manual :: https://astron.com/pub/file/file-5.48.tar.gz
 manual_extract :: tar xzf <placeholder> -C <dir> --strip-components=1

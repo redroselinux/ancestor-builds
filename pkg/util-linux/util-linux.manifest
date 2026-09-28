@@ -1,0 +1,8 @@
+author :: mostypc123 :: mostypc123@redroselinux.org
+package :: util-linux :: 2.42.4
+build_deps :: gcc make
+download :: manual :: https://www.kernel.org/pub/linux/utils/util-linux/v2.42/util-linux-2.42.4.tar.xz
+manual_extract :: tar -xf <placeholder> --strip-components=1 -C <dir>
+build :: manual :: meson setup builddir --prefix=/usr
+build :: manual :: meson compile -C builddir
+install_cmd :: manual :: DESTDIR=<placeholder> meson install -C builddir
